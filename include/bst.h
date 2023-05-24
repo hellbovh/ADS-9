@@ -10,7 +10,7 @@ class BST {
     T key;
     int count;
     Node* left, *right;
-    Node(T k): key(k), count(1), left(nullptr), right(nullptr) {}
+    explicit Node(T k): key(k), count(1), left(nullptr), right(nullptr) {}
   };
   Node* root;
   Node* addNode(Node*, const T&);
