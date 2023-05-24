@@ -26,7 +26,7 @@ class BST {
 template <typename T>
 typename BST<T>::Node* BST<T>::addNode(Node* root, const T& val) {
   if (root == nullptr) {
-    p = new Node(val);
+    root = new Node(val);
   } else if (root->key > val) {
     root->left = addNode(root->left, val);
   } else if (root->key < val) {
