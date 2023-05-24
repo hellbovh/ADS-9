@@ -19,7 +19,7 @@ class BST {
  public:
   BST(): root(nullptr) {}
   void add(const T&);
-  int height();
+  int depth();
   int search(const T&);
 };
 
@@ -51,7 +51,7 @@ int BST<T>::heightTree(Node* root) {
 }
 
 template <typename T>
-int BST<T>::height() {
+int BST<T>::depth() {
   return heightTree(root) - 1;
 }
 
