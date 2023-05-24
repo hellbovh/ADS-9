@@ -13,7 +13,7 @@ BST<std::string> makeTree(const char* filename) {
   if (!fin.is_open()) {
     throw std::string("file opening error!");
   }
-  while (file >> word) {
+  while (fin >> word) {
     std::string formatted_word = "";
     for (int i = 0; i < word.length(); i++) {
       if (isalpha(word[i])) {
